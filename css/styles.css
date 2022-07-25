@@ -49,12 +49,17 @@ body{
   font-size: 2.4rem;
   font-weight: bold;
   margin-left: 1rem;
+  color: var(--gray);
 }
 
 .menu{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.menu a{
+  text-decoration: none;
+  color: var(--gray);
 }
 
 .menu li{
@@ -83,6 +88,7 @@ body{
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 5.3rem;
+  color: var(--gray);
 }
 
 .button{
@@ -130,6 +136,10 @@ body{
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: .5rem;
+}
+
+.scroll img{
+  cursor: pointer;
 }
 
 /* Responsive */
