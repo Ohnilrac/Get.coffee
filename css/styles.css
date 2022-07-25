@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root{
+  
+  --yellow: #FCA60F;
+  --orange: #C95E20;
+  --white: #FFFFFF;
+  --gray: #242424;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header */
+#header {
+  padding: 1.6rem 0;
+  margin-bottom: 13rem;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: .9rem;
+}
+
+.logo img{
+  width: 29px;
+  height: 21px;
+}
+
+.logo h2{
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu li{
+  margin: 0 2.3rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/*  */
+#main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.content-text h1{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 5.3rem;
+}
+
+.button{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 23rem;
+  height: 4.9rem;
+  border-radius: 5px;
+  padding: 1.2rem 0;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+
+
+  background: var(--yellow);
+  color: var(--white);
+}
+
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.icons a{
+  font-size: 2.5rem;
+  margin: 0 1.4rem;
+  color: var(--orange);
+}
+
+/* Scroll */
+.scroll{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.scroll p{
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+/* Responsive */
+
+@media (min-width: 580px) {
+  .navigation{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #main{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main{
+    width: 50%;
+  }
+
+.content-text{
+  align-items: flex-start;
+}
+.content-text h1{
+  text-align: start;
+  width: 85%;
+}
+
+.icons{
+  justify-content: flex-start;
+}
+
+#coffee-content{
+  width: 50%;
+}
+
+#main img{
+  height: 25rem;
+}
+}
+
+@media (min-width: 1000px) {
+  .container{
+    width: 1200px;
+  }
+}
